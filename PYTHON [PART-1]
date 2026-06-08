@@ -1,0 +1,75 @@
+# 1. FIRST PROGRAM IN PYTHON 
+print("HELLO WORLD")
+print("HELLO \nWORLD")
+
+#2 . VARIABLES
+name = "ANSH" #here name is a variable(Container that stores value)
+age = 20 
+print(f"{name} is the person with age {age}")
+print(age-5)
+
+#3. DATA TYPES
+name = "kavya"
+age = 20 
+PI = 3.14
+_istrue = True
+print(type(name)) # str
+print(type(age)) # int
+print(type(PI)) # float
+print(type(_istrue)) # Bool
+
+
+#4. KEYWORDS AND COMMENTS
+#keywords - they are reserved words in python , cannot be used as identifier 
+'''Hello my name is ANSH'''# this is an example of multiline comments 
+
+#5. ARITHMETIC OPERATOR
+a = 10
+b = 5 
+print("sum",a+b)
+print("diff.",a-b)
+print("multiply",a*b)
+print("division",a/b)
+print("remainder",a%b)
+print("exponentiation",a**b)
+
+#6. RELATIONAL / COMPARISON OPERATORS (give output as True or False)
+a = 10 
+b = 20 
+print(a==b)
+print(a<=b)
+print(a>=b)
+print(a!=b)
+
+#7 . ASSIGNMENT OPERATOR
+x = 3 
+y = 4
+
+x=+y
+x=-y
+
+#8. RELATIONAL OPERATOR (3 types - not , or , and)
+var = False
+print(not var) #True
+print(not (5>8)) #True
+
+print((5>3) and (10>8)) #and operator return true if both statements are true
+print((2>11) or (1>9))# or operator return false when both statements are false
+
+#9.OPERATOR PRECEDENCE
+x = 3*5+12 # it is evaluated according to opereator precedence order , hence multiply should perform first before addition 
+print(x)
+
+#10. TAKING INPUT FROM USER
+name = input("enter your name: ")
+age = int(input("enter your age: "))
+print(f"{name} is {age} years old ")
+
+
+#11.PRACTICE PROBLEM 
+# Average of two floating numbers
+num_1 = float(input("enter the first floating number: "))
+num_2 = float(input("enter the second floating number: "))
+
+avg = (num_1 + num_2)/2
+print("average of two numbers: ",avg)
