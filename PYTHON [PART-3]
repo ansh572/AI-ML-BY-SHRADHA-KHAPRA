@@ -1,0 +1,122 @@
+#1. Working with Strings [STRINGS ARE IMMUTABLE]
+word1 = "hello"
+word2 = "ansh_jain"
+
+#concationation 
+print(word1 +" "+ word2) # It is used to add two or more strings together
+
+#indexing
+print(word1[2]) # It is used to access some random word or alphabet from the string 
+
+#SLICING
+print(word2[0:])
+print(word2[0:3])# 0-2 
+print(word2[-4:-1]) # -ve slice indexing 
+
+# Formating in string[f-string & format()]
+
+x = 5 
+y = 10 
+sum = x+y
+print("sum is {}".format(sum)) #normal formating
+print("language is {}".format("python")) #normal formatting
+
+a = 5 
+b = 10 
+sum = a+b
+print(f"the sum is {sum} from a = {a} and b = {b}") #f-string 
+
+#2 . List 
+marks = [90,91,92,93,94,95,"Abc",56.45]#list can store any type of data 
+print(marks)
+print(marks[5])
+print(len(marks))
+
+#list are mutable
+marks[2] = 75
+print(marks)
+print(type(marks))
+
+#slicing in list 
+print(marks[3:6])
+print(marks[-5:-2])
+
+#list methods 
+lst = [1,2,3]
+lst.append(4) #l.append it is use add one element at the end 
+print(lst)
+lst.insert(2,65) #l.insert it is use to add element at one specific index value 
+print(lst)
+lst.sort() #lst.sort use to arrange elements in ascending order 
+print(lst)
+lst.sort(reverse=True)
+print(lst)  
+lst.reverse() #reverses order 
+print(lst)
+
+#using loops with list 
+marks_ =[45,65,75,85]
+for value in marks_:
+    print(value)
+    
+    
+#3. tuple 
+tup = (1,2,3,4,"abc",9.67)
+print(tup)
+print(type(tup))
+print(len(tup))
+
+#indexing 
+print(tup[2])
+
+#slicing
+print(tup[:])
+print(tup[3:5])
+
+#Type of single value tuple 
+t = ("abc",)
+print(type(t))
+
+#tuple methods
+tup_ = (1,2,3,2,2,4)
+print(tup_.index(2)) #return 1st occurance index
+print(tup_.count(2)) #count total occurance of a particular values in tuple 
+
+#4 . Dictionary in python [mutuable , unordered]
+info = {
+    "name":"ansh",
+    "cpga":9.3,
+    "subjects":["maths","science"]
+}
+print(info)
+
+print(info.keys()) #return all keys
+print(info.values()) #return all values
+print(info.items()) #return all (key,value) pairs
+print(info.get("name")) #return value acc. to the key 
+# print(info.update()) add new item to dictionary 
+
+#create an empty dictiionary
+empty_dict = {}
+
+#5 SET 
+s= {1,2,3,3,4,4,4,4}
+print(s)
+print(type(s))
+print(len(s))
+
+#create an empty set 
+empty_set = set()
+
+#set methods 
+s.add(5) #add a value
+print(s)
+s.remove(4) #remove a value 
+print(s)
+s.pop()
+print(s)
+s.clear() #clear the set 
+print(s)
+
+#union -> s1.union(s2)
+#intersection -> s1.intersection(s2)
