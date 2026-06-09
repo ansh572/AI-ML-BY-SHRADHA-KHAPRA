@@ -1,0 +1,150 @@
+#1. CONDITIONAL STATEMENTS (if , else , elif)
+
+#if
+age = 21 
+if(age>=18):
+    print("you are adult")
+    print("can vote")
+
+#else
+_age = 21 
+if(_age>=18):
+    print("you are adult")
+    print("can vote")
+else:
+    print("you are not adult")
+    
+#elif
+traffic_color = input("enter the traffic light color: ")
+if traffic_color == "red":
+    print("stop")
+elif traffic_color == "yellow":
+    print("wait")
+elif traffic_color == "green":
+    print("Go")
+else :
+    print("light is breakdown")
+
+
+##### in operator 
+str = "hello"
+if "l" in str:
+    print(str)
+    
+    
+#EXAMPLE OF (CONDITIONAL STATEMENTS)
+AGE = int(input("enter the age: "))
+if (AGE <13):
+    print("Child")
+elif (AGE >=13 and AGE <=18):
+    print("Teenager")
+else:
+    print("Adult")
+    
+
+#check password and username 
+username = input("Enter the username: ")
+password = input("Enter the password: ")
+if (username=="admin" and password=="pass"):
+    print("Login is successfull")
+elif (username != "admin"):
+    print("Wrong Username")
+else:
+    print("Wrong Password")
+
+#multiple of 5 
+num = int(input("enter the number: "))
+if (num% 5 == 0):
+    print("it is a multiple of 5")
+    
+# odd or even program 
+number = int(input("Enter the number: "))
+if (number %2 == 0):
+    print("it is an even number",number)
+else:
+    print("it is an odd number", number)
+
+# 2. Match Case in python
+color = input("enter the color: ")
+match color:
+    case "Green":
+        print("Go")
+    case "Red":
+        print("stop")
+    case "Yellow":
+        print("look")
+
+# 3. Loop in python [while , for]
+count = 1
+while count<5:
+    print("ansh jain")
+    count+=1
+    
+    
+i = 10 
+while (i>=1):
+    print("i")
+    i-=1
+
+# Table  of any number using loops
+n = int(input("enter the number that you want: "))
+t = 1 
+while(t<=10):
+    print(n*t)
+    t+=1
+    
+# 4 . Break and Continue in loops
+k = 1 
+while(k<=10):
+    if k == 5:
+        break
+    print(k)
+    k+=1
+    
+d = 1 
+while(d<=10):
+    if d % 6 == 0:
+        d+=1
+        continue
+    print(d)
+    d+=1
+    
+# 5. For Loop
+string = "helloji"
+for var in string: #(in) is an membership operator which is used to check the presence 
+    print(var)
+    
+for var in string:
+    if var == "o":
+        print(var)
+        
+# Range function in for loop 
+for i in range(1,10):
+    print(i)
+    
+for i in range(5):
+    print(i)
+    
+for i in range(1,10,2):
+    print(i)
+    
+#functions 
+def hello():
+    print("hello")
+    print("jain")
+hello()
+
+
+def sum(a,b):
+    s = a+b
+    return s
+print(sum(2,2))
+
+def calc_avg (a,b,c):
+    sum_with_avg = (a+b+c)/3
+    return sum_with_avg
+print(calc_avg(1,2,3))
+
+def sum (a , b =1):
+    return a +b
+print(sum(5))
