@@ -56,3 +56,14 @@ finally:
 #LIST COMPREHENSIONS 
 sq = [i*i for i in range(6)]
 print(sq)
+
+#WORKIN WITH JSON
+import json 
+#load data 
+def load_Data(filename):
+    with open (filename,"r") as f:
+        data = json.load(f)
+    return data
+data = load_Data("store_data.json")
+print(data)
+print(type(data))
